@@ -1,0 +1,30 @@
+*.zsh
+
+# Ignorar a pasta build
+build/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de compilação
+*.o
+*.a
+*.out
+
+# Ignorar arquivos de diretórios específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados pelo IDE
+.idea/
+*.swp
+.vscode/
+
+# Ignorar binários e bibliotecas
+bin/
+lib/
+
+# Ignorar arquivos temporários
+*.tmp
+*.bak
+
