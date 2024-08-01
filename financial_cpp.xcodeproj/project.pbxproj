@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		712C2B942C42E4B400FB3CFA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 712C2B932C42E4B400FB3CFA /* main.cpp */; };
 		712C2B9C2C42E4C900FB3CFA /* InterestRateCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 712C2B9A2C42E4C900FB3CFA /* InterestRateCalculator.cpp */; };
+		7180E4562C59FDDA00086C15 /* CashFlowCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7180E4542C59FDDA00086C15 /* CashFlowCalculator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		712C2B932C42E4B400FB3CFA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		712C2B9A2C42E4C900FB3CFA /* InterestRateCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InterestRateCalculator.cpp; sourceTree = "<group>"; };
 		712C2B9B2C42E4C900FB3CFA /* InterestRateCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InterestRateCalculator.hpp; sourceTree = "<group>"; };
+		7180E4542C59FDDA00086C15 /* CashFlowCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CashFlowCalculator.cpp; sourceTree = "<group>"; };
+		7180E4552C59FDDA00086C15 /* CashFlowCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CashFlowCalculator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +64,28 @@
 			isa = PBXGroup;
 			children = (
 				712C2B932C42E4B400FB3CFA /* main.cpp */,
+				71AF40102C5B3875008147F0 /* CashFlowCalculator */,
+				71AF400F2C5B35CF008147F0 /* InterestRateCalculator */,
+			);
+			path = financial_cpp;
+			sourceTree = "<group>";
+		};
+		71AF400F2C5B35CF008147F0 /* InterestRateCalculator */ = {
+			isa = PBXGroup;
+			children = (
 				712C2B9A2C42E4C900FB3CFA /* InterestRateCalculator.cpp */,
 				712C2B9B2C42E4C900FB3CFA /* InterestRateCalculator.hpp */,
 			);
-			path = financial_cpp;
+			path = InterestRateCalculator;
+			sourceTree = "<group>";
+		};
+		71AF40102C5B3875008147F0 /* CashFlowCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				7180E4542C59FDDA00086C15 /* CashFlowCalculator.cpp */,
+				7180E4552C59FDDA00086C15 /* CashFlowCalculator.hpp */,
+			);
+			path = CashFlowCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712C2B942C42E4B400FB3CFA /* main.cpp in Sources */,
+				7180E4562C59FDDA00086C15 /* CashFlowCalculator.cpp in Sources */,
 				712C2B9C2C42E4C900FB3CFA /* InterestRateCalculator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

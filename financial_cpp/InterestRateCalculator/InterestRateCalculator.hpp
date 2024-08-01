@@ -13,15 +13,15 @@ public:
     IntRateCalculator& operator = (IntRateCalculator &v);
     ~IntRateCalculator();
     
-    float singlePeriod(float &value) {
+    float singlePeriod(const float &value) {
         return value * (1 + m_rate);
     }
     
-    float multiplePeriods(float &value, uint16_t &numPeriods) {
+    float multiplePeriods(const float &value, const uint16_t &numPeriods) {
         return value * std::pow(1 + m_rate, numPeriods);
     }
     
-    float continuousCompounding(float &value, uint16_t &numPeriods) {
+    float continuousCompounding(const float &value, const uint16_t &numPeriods) {
         return value * std::exp(m_rate * numPeriods);
     }
     
