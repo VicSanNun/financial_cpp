@@ -10,6 +10,8 @@
 		712C2B942C42E4B400FB3CFA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 712C2B932C42E4B400FB3CFA /* main.cpp */; };
 		712C2B9C2C42E4C900FB3CFA /* InterestRateCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 712C2B9A2C42E4C900FB3CFA /* InterestRateCalculator.cpp */; };
 		7180E4562C59FDDA00086C15 /* CashFlowCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7180E4542C59FDDA00086C15 /* CashFlowCalculator.cpp */; };
+		71AF40132C5B6553008147F0 /* BondCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40112C5B6553008147F0 /* BondCalculator.cpp */; };
+		71AF40172C5C43EE008147F0 /* MovingAverageCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40152C5C43EE008147F0 /* MovingAverageCalculator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		712C2B9B2C42E4C900FB3CFA /* InterestRateCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InterestRateCalculator.hpp; sourceTree = "<group>"; };
 		7180E4542C59FDDA00086C15 /* CashFlowCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CashFlowCalculator.cpp; sourceTree = "<group>"; };
 		7180E4552C59FDDA00086C15 /* CashFlowCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CashFlowCalculator.hpp; sourceTree = "<group>"; };
+		71AF40112C5B6553008147F0 /* BondCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BondCalculator.cpp; sourceTree = "<group>"; };
+		71AF40122C5B6553008147F0 /* BondCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondCalculator.hpp; sourceTree = "<group>"; };
+		71AF40152C5C43EE008147F0 /* MovingAverageCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MovingAverageCalculator.cpp; sourceTree = "<group>"; };
+		71AF40162C5C43EE008147F0 /* MovingAverageCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MovingAverageCalculator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,9 @@
 		712C2B922C42E4B400FB3CFA /* financial_cpp */ = {
 			isa = PBXGroup;
 			children = (
+				71AF40142C5B6562008147F0 /* BondCalculator */,
 				712C2B932C42E4B400FB3CFA /* main.cpp */,
+				71AF40182C5C5324008147F0 /* MovingAverageCalculator */,
 				71AF40102C5B3875008147F0 /* CashFlowCalculator */,
 				71AF400F2C5B35CF008147F0 /* InterestRateCalculator */,
 			);
@@ -86,6 +94,24 @@
 				7180E4552C59FDDA00086C15 /* CashFlowCalculator.hpp */,
 			);
 			path = CashFlowCalculator;
+			sourceTree = "<group>";
+		};
+		71AF40142C5B6562008147F0 /* BondCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				71AF40112C5B6553008147F0 /* BondCalculator.cpp */,
+				71AF40122C5B6553008147F0 /* BondCalculator.hpp */,
+			);
+			path = BondCalculator;
+			sourceTree = "<group>";
+		};
+		71AF40182C5C5324008147F0 /* MovingAverageCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				71AF40152C5C43EE008147F0 /* MovingAverageCalculator.cpp */,
+				71AF40162C5C43EE008147F0 /* MovingAverageCalculator.hpp */,
+			);
+			path = MovingAverageCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AF40132C5B6553008147F0 /* BondCalculator.cpp in Sources */,
 				712C2B942C42E4B400FB3CFA /* main.cpp in Sources */,
 				7180E4562C59FDDA00086C15 /* CashFlowCalculator.cpp in Sources */,
+				71AF40172C5C43EE008147F0 /* MovingAverageCalculator.cpp in Sources */,
 				712C2B9C2C42E4C900FB3CFA /* InterestRateCalculator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

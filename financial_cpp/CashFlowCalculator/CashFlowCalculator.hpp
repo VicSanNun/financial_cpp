@@ -8,7 +8,7 @@ class CashFlowCalculator {
     private:
         std::vector<float> m_cashPayments;
         std::vector<uint16_t> m_timePeriods;
-        float presentValue(float futureValue, uint16_t timePeriod);
+        float presentValue(float &futureValue, uint16_t timePeriod);
         float m_rate;
     
     public:
@@ -17,7 +17,7 @@ class CashFlowCalculator {
         CashFlowCalculator &operator = (CashFlowCalculator &v);
         ~CashFlowCalculator();
     
-        void addCashPayment(float value, uint16_t timePeriod);
+        void addCashPayment(float &value, uint16_t timePeriod);
         float presentValue();
         
         float rate() const {

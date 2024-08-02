@@ -14,13 +14,15 @@ CashFlowCalculator &CashFlowCalculator::operator = (CashFlowCalculator &v) {
     return *this;
 };
 
-void CashFlowCalculator::addCashPayment(float value, uint16_t timePeriod){
+void CashFlowCalculator::addCashPayment(float &value, uint16_t  timePeriod){
     this -> m_cashPayments.push_back(value);
     this -> m_timePeriods.push_back(timePeriod);
 }
 
-float CashFlowCalculator::presentValue(float futureValue, uint16_t timePeriod) {
-    float pValue = futureValue / pow(1+m_rate, timePeriod);
+float CashFlowCalculator::presentValue(float &futureValue, uint16_t timePeriod) {
+    float pValue = futureValue / pow(1 + m_rate, timePeriod);
+    std::cout << "Future Value: " << futureValue << '\n';
+    std::cout << "Time Period: " << timePeriod << '\n';
     std::cout << "Value: " << pValue << '\n';
     return pValue;
 }
