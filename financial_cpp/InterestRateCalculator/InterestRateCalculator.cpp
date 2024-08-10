@@ -12,3 +12,4 @@ IntRateCalculator &IntRateCalculator::operator = (IntRateCalculator &v) {
 };
 
 
+
