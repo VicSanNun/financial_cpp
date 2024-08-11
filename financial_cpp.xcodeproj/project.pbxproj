@@ -13,6 +13,7 @@
 		71AF40132C5B6553008147F0 /* BondCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40112C5B6553008147F0 /* BondCalculator.cpp */; };
 		71AF40172C5C43EE008147F0 /* MovingAverageCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40152C5C43EE008147F0 /* MovingAverageCalculator.cpp */; };
 		71AF40342C67E930008147F0 /* VolatilityCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40322C67E930008147F0 /* VolatilityCalculator.cpp */; };
+		71AF40382C691DC1008147F0 /* TimeSeries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AF40362C691DC1008147F0 /* TimeSeries.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		71AF40162C5C43EE008147F0 /* MovingAverageCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MovingAverageCalculator.hpp; sourceTree = "<group>"; };
 		71AF40322C67E930008147F0 /* VolatilityCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VolatilityCalculator.cpp; sourceTree = "<group>"; };
 		71AF40332C67E930008147F0 /* VolatilityCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VolatilityCalculator.hpp; sourceTree = "<group>"; };
+		71AF40362C691DC1008147F0 /* TimeSeries.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSeries.cpp; sourceTree = "<group>"; };
+		71AF40372C691DC1008147F0 /* TimeSeries.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TimeSeries.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		712C2B922C42E4B400FB3CFA /* financial_cpp */ = {
 			isa = PBXGroup;
 			children = (
+				71AF40392C691DCB008147F0 /* TimeSeries */,
 				712C2B932C42E4B400FB3CFA /* main.cpp */,
 				71AF40142C5B6562008147F0 /* BondCalculator */,
 				71AF40352C67E936008147F0 /* VolatilityCalculator */,
@@ -125,6 +129,15 @@
 				71AF40332C67E930008147F0 /* VolatilityCalculator.hpp */,
 			);
 			path = VolatilityCalculator;
+			sourceTree = "<group>";
+		};
+		71AF40392C691DCB008147F0 /* TimeSeries */ = {
+			isa = PBXGroup;
+			children = (
+				71AF40362C691DC1008147F0 /* TimeSeries.cpp */,
+				71AF40372C691DC1008147F0 /* TimeSeries.hpp */,
+			);
+			path = TimeSeries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +199,7 @@
 			files = (
 				71AF40132C5B6553008147F0 /* BondCalculator.cpp in Sources */,
 				712C2B942C42E4B400FB3CFA /* main.cpp in Sources */,
+				71AF40382C691DC1008147F0 /* TimeSeries.cpp in Sources */,
 				7180E4562C59FDDA00086C15 /* CashFlowCalculator.cpp in Sources */,
 				71AF40172C5C43EE008147F0 /* MovingAverageCalculator.cpp in Sources */,
 				71AF40342C67E930008147F0 /* VolatilityCalculator.cpp in Sources */,

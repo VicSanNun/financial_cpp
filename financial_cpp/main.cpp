@@ -4,6 +4,7 @@
 #include "BondCalculator/BondCalculator.hpp"
 #include "MovingAverageCalculator/MovingAverageCalculator.hpp"
 #include "VolatilityCalculator/VolatilityCalculator.hpp"
+#include "TimeSeries/TimeSeries.hpp"
 
 
 int main(int argc, const char* argv[]) {
@@ -20,6 +21,7 @@ int main(int argc, const char* argv[]) {
     BondCalculator bondCalc {"Company A", 20, 100000, 5000};
     MovingAverageCalculator maCalc {numPeriodsMaCalc};
     VolatilityCalculator volCal {};
+    TimeSeries timeSeries {};
     
     
     float res1 = irCalculator.singlePeriod(value);

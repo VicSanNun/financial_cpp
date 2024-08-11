@@ -16,13 +16,12 @@ BondCalculator::BondCalculator(const BondCalculator &v) :
 
 BondCalculator &BondCalculator::operator =(const BondCalculator &v)
 {
-    if (this != &v)
-    {
+    if (this != &v) {
         this->m_institution = v.m_institution;
         this->m_principal = v.m_principal;
         this->m_numPeriods = v.m_numPeriods;
         this->m_coupon = v.m_coupon;
-}
+    }
     return *this;
 }
 
