@@ -3,6 +3,7 @@
 #include "CashFlowCalculator/CashFlowCalculator.hpp"
 #include "BondCalculator/BondCalculator.hpp"
 #include "MovingAverageCalculator/MovingAverageCalculator.hpp"
+#include "VolatilityCalculator/VolatilityCalculator.hpp"
 
 
 int main(int argc, const char* argv[]) {
@@ -11,12 +12,15 @@ int main(int argc, const char* argv[]) {
     float value {10000};
     uint16_t numPeriodsMaCalc = 5;
     std::vector<float> cashFlows ({200, 300, 500, -1000});
-    std::vector<float>closePrices ({10, 11, 22, 12, 13, 23, 12, 32, 12, 3, 2, 22, 32});
+    std::vector<float> closePrices ({10, 11, 22, 12, 13, 23, 12, 32, 12, 3, 2, 22, 32});
+    std::vector<float> prices ({3, 3.5, 5, 4.48, 5.2, 6, 6.1, 5.5, 5.2, 5.7});
     
     IntRateCalculator irCalculator {rate};
     CashFlowCalculator cashFlowCalc {rate};
     BondCalculator bondCalc {"Company A", 20, 100000, 5000};
     MovingAverageCalculator maCalc {numPeriodsMaCalc};
+    VolatilityCalculator volCal {};
+    
     
     float res1 = irCalculator.singlePeriod(value);
     float res2 = irCalculator.multiplePeriods(value, 2);
@@ -35,6 +39,13 @@ int main(int argc, const char* argv[]) {
     std::vector<float> ma_res = maCalc.calculateMA();
     std::vector<float> ema_res = maCalc.calculateEMA();
     
+    for (float i : prices) {
+        volCal.addPrice(i);
+    }
+    double avg_daily = volCal.avgDailyRange();
+    double range = volCal.rangeVolatility();
+    double std_dev_res = volCal.stdDev();
+    
     std::cout << "Result Single Period Interest Rate is: " << res1 << '\n';
     std::cout << "Result Mult Period Interest Rate is: " << res2 << '\n';
     std::cout << "Result Continuous Compounding Interest Rate is: " << res3 << '\n';
@@ -47,6 +58,9 @@ int main(int argc, const char* argv[]) {
     for (float i : ema_res) {
         std::cout << "Média Móvel Exponencial Item: " << i << '\n';
     }
+    std::cout << "Average Daily range: " << avg_daily << '\n';
+    std::cout << "Range Volatility: " << range << '\n';
+    std::cout << "Std Dev: " << std_dev_res << '\n';
     
     return 0;
 }
